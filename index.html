@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Durga Praneeth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px) rotateX(2deg) rotateY(2deg);
+            border: 1px solid rgba(59, 130, 246, 0.5);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .hero-glow {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(60px);
+        }
+
+        .status-badge {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+        }
+    </style>
+</head>
+<body class="antialiased" id="home">
+
+    <nav class="fixed w-full z-50 top-0 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass-card rounded-2xl px-8 py-3">
+            <a href="#home" class="text-xl font-bold tracking-tighter uppercase hover:text-blue-500 transition-colors">DP</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="hero-glow top-20 left-10 animate-pulse"></div>
+        <div class="hero-glow bottom-20 right-10 animate-bounce"></div>
+        
+        <div class="max-w-4xl mx-auto text-center px-6 animate__animated animate__fadeInUp">
+            <h1 class="text-5xl md:text-8xl font-bold mb-6 tracking-tight">M. Durga <span class="text-blue-500">Praneeth</span></h1>
+            <span class="status-badge px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">Computer Science Engineer (IOT) </span>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                I am an aspiring engineering student with hands-on experience in software development, IoT projects, and simulation-based applications.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="bg-white text-black px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform">View Projects</a>
+                <div class="flex items-center gap-6 px-6 border-l border-gray-700">
+                    <a href="https://github.com/Praneeth3105" target="_blank" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/muvvala-durga-praneeth-983ab8277/" target="_blank" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 px-6 bg-slate-900/20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center underline decoration-blue-500 underline-offset-8">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="glass-card p-8 rounded-3xl">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Career Objective </h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                      Aspiring engineering professional with practical exposure to software development, IoT, and simulation-based projects. Skilled in Python, C, and web technologies, with strong problem-solving abilities and a track record of delivering innovative outcomes through academic and internship experiences. 
+                    </p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Education</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li>
+                            <p class="font-bold">B.Tech in CSE (IoT) - 72.73%</p>
+                            <p class="text-gray-500">PSCMR College of Engineering and Technology</p>
+                        </li>
+                        <li>
+                            <p class="font-bold">Intermediate (MPC) - 79.90%</p>
+                            <p class="text-gray-500">KBN College </p>
+                        </li>
+                        <li>
+                            <p class="font-bold">SSC - 94.67% </p>
+                            <p class="text-gray-500">MSR English Medium High School </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center">Technical Arsenal</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glass-card p-8 rounded-3xl text-center">
+                    <i class="fas fa-microchip text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold">IoT</h3>
+                    <p class="text-[10px] text-gray-500 mt-2 uppercase tracking-widest">Arduino, Raspberry Pi </p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl text-center">
+                    <i class="fas fa-terminal text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold">Languages</h3>
+                    <p class="text-[10px] text-gray-500 mt-2 uppercase tracking-widest">Python, C</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl text-center">
+                    <i class="fas fa-globe text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold">Frontend</h3>
+                    <p class="text-[10px] text-gray-500 mt-2 uppercase tracking-widest">HTML, CSS, JS</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl text-center">
+                    <i class="fas fa-database text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold">Database</h3>
+                    <p class="text-[10px] text-gray-500 mt-2 uppercase tracking-widest">SQL, MongoDB </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 bg-slate-900/40">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16">Innovative Work</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                
+                <div class="glass-card p-8 rounded-[2.5rem]">
+                    <span class="text-blue-400 text-xs font-bold tracking-widest uppercase">IoT </span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">Smart Automatic Roofing System </h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                       An IoT project that automatically covers open areas when rainfall is detected using sensor integration. 
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-[2.5rem]">
+                    <span class="text-blue-400 text-xs font-bold tracking-widest uppercase">Cyber Security </span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">Password Strength Checker</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                         Password Strength Checker that analyzes user-entered passwords and instantly classifies them as weak, medium, or strong. 
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-[2.5rem]">
+                    <span class="text-blue-400 text-xs font-bold tracking-widest uppercase">MERN Stack </span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">Doctor Appointment System </h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        A full-stack solution for patient-doctor interactions with secure authentication and scheduling. 
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center">Intern Experience</h2>
+            <div class="space-y-12">
+                <div class="relative pl-8 border-l-2 border-blue-500/30">
+                    <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1"></div>
+                    <h4 class="text-xl font-bold">Swecha Intern</h4>
+                    <span class="text-sm text-blue-400">May 202 – July 2024 </span>
+                    <p class="text-gray-400 mt-4 text-sm">Developed a simulation on Reflection of Light using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="relative pl-8 border-l-2 border-blue-500/30">
+                    <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1"></div>
+                    <h4 class="text-xl font-bold">Supraja Technologies Intern </h4>
+                    <span class="text-sm text-blue-400">May 2024 – August 2024</span>
+                    <p class="text-gray-400 mt-4 text-sm">Developed a Password Strength Checker project to evaluate security levels and user-focused design. </p>
+                </div>
+                <div class="relative pl-8 border-l-2 border-blue-500/30">
+                    <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1"></div>
+                    <h4 class="text-xl font-bold">Smart Bridge Intern</h4>
+                    <span class="text-sm text-blue-400">May 2025 – July 2025 </span>
+                    <p class="text-gray-400 mt-4 text-sm">Developed an MERN application named Doctor Appointment System. </p>
+                </div>
+                 <div class="relative pl-8 border-l-2 border-blue-500/30">
+                    <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1"></div>
+                    <h4 class="text-xl font-bold">Inversion X SkillForge</h4>
+                    <span class="text-sm text-blue-400">May 2025 – July 2025 </span>
+                    <p class="text-gray-400 mt-4 text-sm">Developed Online Simulation IoT Project usign the Thing Speak. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="mt-2 text-blue-400 font-bold tracking-tight">muvvalapraneeth@gmail.com</p>
+        <p class="mt-2 text-blue-400 font-bold tracking-tight">+91 7793933505</p>
+    
+    </footer>
+
+</body>
+</html>
